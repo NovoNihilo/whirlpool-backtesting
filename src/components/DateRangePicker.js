@@ -11,7 +11,7 @@ function DateRangePicker({ startDate, endDate, onStartDateChange, onEndDateChang
   // Validation function to ensure dates are within the allowed range
   const validateDate = (date, isStart) => {
     const minDate = new Date('2021-01-01');
-    const maxDate = new Date('2025-01-01');
+    const maxDate = new Date('2025-02-28'); // Updated to February 24, 2025
     const selectedDate = new Date(date);
 
     if (selectedDate < minDate) {
@@ -47,24 +47,24 @@ function DateRangePicker({ startDate, endDate, onStartDateChange, onEndDateChang
     <div className="date-range-picker">
       <div className="form-group">
         <label htmlFor="start-date">Start Date:</label>
-        <input 
-          type="date" 
-          id="start-date" 
+        <input
+          type="date"
+          id="start-date"
           value={formatDateForInput(startDate)}
           onChange={handleStartDateChange}
-          min="2021-01-01" 
-          max="2025-01-01" 
+          min="2021-01-01"
+          max="2025-02-28" // Updated to February 24, 2025
         />
       </div>
       <div className="form-group">
         <label htmlFor="end-date">End Date:</label>
-        <input 
-          type="date" 
-          id="end-date" 
+        <input
+          type="date"
+          id="end-date"
           value={formatDateForInput(endDate)}
           onChange={handleEndDateChange}
-          min="2021-01-01" 
-          max="2025-01-01" 
+          min="2021-01-01"
+          max="2025-02-28" // Updated to February 24, 2025
         />
       </div>
     </div>

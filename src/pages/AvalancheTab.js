@@ -10,7 +10,7 @@ import {
   calculateRebalancedPerformance,
   combinePerformanceData,
   generateSummaryStats
-} from '../utils/dataProcessor';
+} from '../utils/enhancedDataProcessor';
 
 function AvalancheTab() {
   // State for form inputs
